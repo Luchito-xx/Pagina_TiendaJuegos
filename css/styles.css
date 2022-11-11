@@ -36,3 +36,41 @@ header, .alert{
 .hide, .remove{
   display: none;
 }
+form .grupo{
+  position: relative;
+  margin: 45px;
+}
+input{
+  background-color: #aaaaaa ;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid;
+}
+input:focus{
+  outline: none;
+  color: #5e5d5d;
+}
+input:focus~label,
+input:valid~label{
+  top: -24px;
+  font-size: 17px;
+  color: #4b4b4b;
+}
+label{
+  font-size: 16px;
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  top: 10px;
+  transition: 0.5s ease-in-out all;
+  pointer-events: none; 
+}
+.warnings{
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: #be2929;
+  padding-top: 20px;
+}

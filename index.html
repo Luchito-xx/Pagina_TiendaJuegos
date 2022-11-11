@@ -29,6 +29,10 @@
         <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button"
           role="tab" aria-controls="pills-contact" aria-selected="false">Carrito</a>
       </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-perfil-tab" data-bs-toggle="pill" data-bs-target="#pills-perfil" type="button"
+          role="tab" aria-controls="pills-perfil" aria-selected="false">Perfil</a>
+      </li>
     </ul>
   </header>
 
@@ -240,9 +244,33 @@
         </div>
       </div>
     </div>
-  </div>
 
-  <footer class="bg-dark p-3 mt-5">
+    <div class="tab-pane fade" id="pills-perfil" role="tabpanel" aria-labelledby="pills-perfil-tab">
+      <div class="d-flex justify-content-center">
+        <form class="bg-secondary bg-gradient shadow p-3 mb-5 bg-secondary rounded br-10" action="" method="POST" id="form">
+          <div class="form">
+            <h1 class="text-center ">Registro</h1>
+            <div class="grupo">
+              <input type="text" name="" id="name" required>
+              <label for="">Nombre</label>
+            </div>
+            <div class="grupo">
+              <input type="text" name="" id="email" required>
+              <label for="">Email</label>
+            </div>
+            <div class="grupo">
+              <input type="password" name="" id="password" required>
+              <label for="">Contraseña</label>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button class="btn btn-info" type="submit">Suscribirte</button>
+            </div>
+            <p class="warnings" id="warnings"></p>
+          </div>
+        </div>
+    </div>
+  </div>
+  <footer class="bg-dark p-3 mt-5 fixed-bottom">
     <p class="text-center m-0 text-muted">by: Luchito-xx</p>
   </footer>
   
